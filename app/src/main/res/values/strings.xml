@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">BlueDaisy</string>
+    <string name="button_retry">Retry</string>
+    <string name="connecting_status_text">Connecting…</string>
+    <string name="connection_failed_status_text">Connection failed.</string>
+    <string name="connection_lost_status_text">Connection lost.</string>
+
+    <!--BottomBar Tabs-->
+    <string name="general_tab_text">General</string>
+    <string name="media_tab_text">Media</string>
+    <string name="presentation_tab_text">Presentation</string>
+</resources>

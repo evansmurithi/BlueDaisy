@@ -1,0 +1,24 @@
+<resources>
+    <dimen name="bd_padding">16dp</dimen>
+
+    <dimen name="bd_fab_margin">16dp</dimen>
+
+    <dimen name="bd_avi_loading_size">150dp</dimen>
+
+    <!-- Font sizes -->
+    <dimen name="bd_font_larger">22sp</dimen>
+    <dimen name="bd_font_large">18sp</dimen>
+    <dimen name="bd_font_normal">15sp</dimen>
+    <dimen name="bd_font_small">12sp</dimen>
+
+    <!-- List item -->
+    <dimen name="bd_list_item_margin">24dp</dimen>
+    <dimen name="bd_list_item_button_margin">4dp</dimen>
+    <dimen name="bd_list_item_name_text_size">16sp</dimen>
+    <dimen name="bd_list_item_address_text_size">12sp</dimen>
+
+    <!-- Button -->
+    <dimen name="bd_button_text_size">14sp</dimen>
+
+    <dimen name="bd_bottom_bar_height">60dp</dimen>
+</resources>
