@@ -9,4 +9,10 @@
     <string name="general_tab_text">General</string>
     <string name="media_tab_text">Media</string>
     <string name="presentation_tab_text">Presentation</string>
+
+    <!--General Tab-->
+    <string name="lock_btn_cd">Screen lock</string>
+    <string name="brightness_down_btn_cd">Screen lock</string>
+    <string name="brightness_btn_text">BRIGHTNESS</string>
+    <string name="wifi_btn_text">WIFI</string>
 </resources>
