@@ -6,11 +6,119 @@
     android:padding="@dimen/bd_padding"
     >
 
-    <TextView
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:text="Media Tab"
-        />
+        >
+
+        <ImageButton
+            android:id="@+id/volumeUpButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_add_black_24dp"
+            android:background="@drawable/small_round_button"
+            android:contentDescription="@string/volume_up_btn_cd"
+            />
+
+        <RelativeLayout
+            android:id="@+id/pauseLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/volumeUpButton"
+            android:layout_marginTop="@dimen/bd_section_height_size"
+            >
+
+            <ImageButton
+                android:id="@+id/rewindButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/ic_fast_rewind_black_24dp"
+                android:background="@drawable/small_round_button"
+                android:contentDescription="@string/rewind_btn_cd"
+                />
+
+            <ImageButton
+                android:id="@+id/pauseButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_pause_black_24dp"
+                android:background="@drawable/big_round_button"
+                android:contentDescription="@string/pause_btn_cd"
+                />
+
+            <ImageButton
+                android:id="@+id/forwardButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_fast_forward_black_24dp"
+                android:background="@drawable/small_round_button"
+                android:contentDescription="@string/forward_btn_cd"
+                />
+
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/volumeDownButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/pauseLayout"
+            android:layout_marginTop="@dimen/bd_section_height_size"
+            android:src="@drawable/ic_remove_black_24dp"
+            android:background="@drawable/small_round_button"
+            android:contentDescription="@string/volume_down_btn_cd"
+            />
+
+        <RelativeLayout
+            android:id="@+id/brightnessLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/volumeDownButton"
+            android:layout_marginTop="@dimen/bd_section_height_size"
+            >
+
+            <ImageButton
+                android:id="@+id/muteButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/ic_volume_off_black_24dp"
+                android:background="@drawable/small_round_button"
+                android:contentDescription="@string/mute_btn_cd"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/mute_btn_text"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryText"
+                />
+
+            <ImageButton
+                android:id="@+id/brightnessUpButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_volume_up_black_24dp"
+                android:background="@drawable/small_round_button"
+                android:contentDescription="@string/unmute_btn_cd"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
 
 </RelativeLayout>
