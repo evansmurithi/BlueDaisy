@@ -31,6 +31,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import io.evansmurithi.bluedaisy.R;
+import io.evansmurithi.bluedaisy.managers.BDApplication;
 import io.evansmurithi.bluedaisy.managers.BluetoothService;
 
 /**
@@ -151,6 +152,7 @@ public class ConnectionFragment extends Fragment {
 
         mBluetoothDevice = mBluetoothAdapter.getRemoteDevice(mDeviceAddress);
         mBluetoothService = new BluetoothService(getActivity());
+        ((BDApplication) getActivity().getApplication()).setBluetoothService(mBluetoothService);
         mBluetoothService.connect(mBluetoothDevice);
     }
 

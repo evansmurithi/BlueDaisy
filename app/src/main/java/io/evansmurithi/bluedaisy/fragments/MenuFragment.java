@@ -10,10 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.roughike.bottombar.BottomBar;
-import com.roughike.bottombar.BottomBarTab;
 import com.roughike.bottombar.OnTabSelectListener;
-
-import java.util.Map;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
